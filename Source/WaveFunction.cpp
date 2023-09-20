@@ -28,18 +28,18 @@ double ProbDensity(double x)
 
 double Energy_ligante(double R)
 {
-    double J = exp(-2 * R) * (1 + 1 / R) ;
-    double K = exp(-R) * (1 / R - 2 / 3 * R);
+    double J = exp((-2) * R) * (1 + 1 / R) ;
+    double K = exp(-R) * (1 / R - (2 / 3) * R);
     double S = exp(-R) * (1 + R + pow(R, 2) / 3);
-    double result = 0.5 + (J + K) / (1 + S);
+    double result = -0.5 + (J + K) / (1 + S);
     return result;
 }
 double Energy_antiligante(double R)
 {
-    double J = exp(-2 * R) * (1 + 1 / R);
-    double K = exp(-R) * (1 / R - 2 / 3 * R);
+    double J = exp((-2) * R) * (1 + 1 / R);
+    double K = exp(-R) * (1 / R - (2 / 3) * R);
     double S = exp(-R) * (1 + R + pow(R, 2) / 3);
-    double result = 0.5 + (J - K) / (1 - S);
+    double result = -0.5 + (J - K) / (1 - S);
     return result;
 
 }
