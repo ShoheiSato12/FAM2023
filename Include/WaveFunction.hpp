@@ -10,3 +10,5 @@ double antiligante(double R, double f1, double f2);
 double ProbDensity(double x);
 double Energy_ligante(double R);
 double Energy_antiligante(double R);
+double ProbDensityinR_ligante(double R);
+double ProbDensityinR_antiligante(double R);

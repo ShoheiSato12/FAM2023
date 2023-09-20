@@ -4,9 +4,10 @@
 
 int main()
 {
+    double R=2;
+    //writeWaves(-10, 10, -10, 10, -10, 10, R, 1000);
+    //writeProb(-10, 10, -10, 10, -10, 10, R, 1000);
+    writeEnergies(0, 4, 3000);
 
-    writeWaves(-10, 10, -10, 10, -10, 10, 2, 1000);
-    writeProb(-10, 10, -10, 10, -10, 10, 2, 1000);
-    writeEnergies(-0, 12, 1000);
     printf("Terminei\n");
 }

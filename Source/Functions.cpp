@@ -58,29 +58,21 @@ void writeEnergies(double Rinit, double Rfin, int subdivision)
 {
     std::ofstream doc1;
     std::ofstream doc2;
-    doc1.open("Outputs/DAT/EnerLigante.dat");
-    doc2.open("Outputs/DAT/EnerAntiligante.dat");
+    doc1.open("Outputs/DAT/1EnerLigante.dat");
+    doc2.open("Outputs/DAT/1EnerAntiligante.dat");
     for (double auxk = Rinit; auxk < Rfin;auxk=auxk+(Rfin-Rinit)/subdivision)
     {
-        doc1 << auxk << '\t' << Energy_antiligante(auxk) << "\n";
-        doc2 << auxk << '\t' << Energy_ligante(auxk) << "\n";
+        doc1 << auxk << '\t' << Energy_ligante(auxk) << "\n";
+        doc2 << auxk << '\t' << Energy_antiligante(auxk) << "\n";
     }
 
 }
-void plot()
+void plotEnergy()
 {
     FILE *gnu = popen("gnuplot -persist", "w");
     if (gnu)
     {
-        fprintf(gnu, "\n");
-        fprintf(gnu, "\n");
-        fprintf(gnu, "\n");
-        fprintf(gnu, "\n");
-        fprintf(gnu, "\n");
-        fprintf(gnu, "\n");
-        fprintf(gnu, "\n");
-        fprintf(gnu, "\n");
-        fprintf(gnu, "\n");
+        fprintf(gnu,"load gnuplot/energies.plt \n");
     }
 }
 

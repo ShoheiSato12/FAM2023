@@ -11,7 +11,7 @@ SRCS := $(wildcard $(SRC_DIR)/*.cpp)
 # Object files
 OBJS := $(patsubst $(SRC_DIR)/%.cpp, $(OBJ_DIR)/%.o, $(SRCS))
 
-TARGET :=result
+TARGET :=result2
 
 all: $(TARGET)
 
