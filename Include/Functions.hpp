@@ -1,7 +1,11 @@
 #pragma once
 #include<iostream>
 #include<fstream>
+#include<string>
+#include"WaveFunction.hpp"
 
-void write(double x, double y, double z, double value);
+void writeWaves(double Xinit, double Xfin, double Yinit, double Yfin, double Zinit, double Zfin, double R, int subdivision);
+void writeProb(double Xinit, double Xfin, double Yinit, double Yfin, double Zinit, double Zfin, double R, int subdivision);
+void writeEnergies(double Rinit, double Rfin, int subdivision);
 void plot();
 void animate();
