@@ -5,8 +5,8 @@
 int main()
 {
     double R=2;
-    //writeWaves(-10, 10, -10, 10, -10, 10, R, 1000);
-    //writeProb(-10, 10, -10, 10, -10, 10, R, 1000);
+    //writeWaves(-5, 5, -5, 5, -5, 5, R, 1000);
+    //writeProb(-5, 5, -5, 5, -5, 5, R, 1000);
     writeEnergies(0, 7, 100);
 
     printf("Terminei\n");
