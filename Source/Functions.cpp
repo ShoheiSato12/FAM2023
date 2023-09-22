@@ -92,3 +92,8 @@ void animate()
         fprintf(gnu, "\n");
     }
 }
+
+double minimumvalue()
+{
+    
+}

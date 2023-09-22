@@ -9,3 +9,4 @@ void writeProb(double Xinit, double Xfin, double Yinit, double Yfin, double Zini
 void writeEnergies(double Rinit, double Rfin, int subdivision);
 void plotEnergy();
 void animate();
+double minimumvalue();
