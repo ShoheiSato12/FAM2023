@@ -5,9 +5,10 @@
 int main()
 {
     double R=2;
-    //writeWaves(-5, 5, -5, 5, -5, 5, R, 1000);
-    //writeProb(-5, 5, -5, 5, -5, 5, R, 1000);
+    writeWaves(-5, 5, -5, 5, -5, 5, R, 100);
+    writeProb(-5, 5, -5, 5, -5, 5, R, 100);
     writeEnergies(0, 7, 100);
-
+    ProbDensityinR_antiligante();
+    ProbDensityinR_ligante();
     printf("Terminei\n");
 }

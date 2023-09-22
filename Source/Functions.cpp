@@ -15,8 +15,8 @@ void writeWaves(double Xinit, double Xfin, double Yinit,double Yfin, double Zini
         {
             for (double auxk = Zinit; auxk < Zfin;auxk=auxk+(Zfin-Zinit)/subdivision)
             {
-                doc1 << x << '\t' << y << '\t' << z << '\t' << ligante(R, Psi(x - R / 2, y, z), Psi(z + R / 2, y, z)) << "\n";
-                doc2 << x << '\t' << y << '\t' << z << '\t' << ligante(R, Psi(x - R / 2, y, z), Psi(z + R / 2, y, z)) << "\n";
+                doc1 << auxi << '\t' << auxj << '\t' << auxk << '\t' << ligante(R, Psi(x - R / 2, y, z), Psi(z + R / 2, y, z)) << "\n";
+                doc2 << auxi << '\t' << auxj << '\t' << auxk << '\t' << ligante(R, Psi(x - R / 2, y, z), Psi(z + R / 2, y, z)) << "\n";
             }
             doc1 << "\n";
             doc2 << "\n";
@@ -42,8 +42,8 @@ void writeProb(double Xinit, double Xfin, double Yinit,double Yfin, double Zinit
         {
             for (double auxk = Zinit; auxk < Zfin;auxk=auxk+(Zfin-Zinit)/subdivision)
             {
-                doc1 << x << '\t' << y << '\t' << z << '\t' << ProbDensity(ligante(R, Psi(x - R / 2, y, z), Psi(z + R / 2, y, z))) << "\n";
-                doc2 << x << '\t' << y << '\t' << z << '\t' << ProbDensity(ligante(R, Psi(x - R / 2, y, z), Psi(z + R / 2, y, z))) << "\n";
+                doc1 << auxi << '\t' << auxj << '\t' << auxk << '\t' << ProbDensity(ligante(R, Psi(x - R / 2, y, z), Psi(z + R / 2, y, z))) << "\n";
+                doc2 << auxi << '\t' << auxj << '\t' << auxk << '\t' << ProbDensity(ligante(R, Psi(x - R / 2, y, z), Psi(z + R / 2, y, z))) << "\n";
             }
             doc1 << "\n";
             doc2 << "\n";

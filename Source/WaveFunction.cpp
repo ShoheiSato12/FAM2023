@@ -20,12 +20,10 @@ double antiligante(double R, double f1, double f2)
     double result = a * (f1 - f2);
     return result;
 }
-
 double ProbDensity(double x)
 {
     return pow(x, 2);
 }
-
 double Energy_ligante(long double R)
 {
     long double J = exp((-2) * R) * (1 + 1 / R) ;
@@ -46,8 +44,8 @@ double Energy_antiligante(long double R)
 void ProbDensityinR_ligante()
 {
     std::vector<double> x, y, z, value;
-    std::ifstream doc("ProbLigante.dat");
-    std::ofstream out("Prob_Rligante.dat");
+    std::ifstream doc("Outputs/DAT/ProbLigante.dat");
+    std::ofstream out("Outputs/DAT/Prob_Rligante.dat");
     double auxiliar=0;
     double incremento = 0.01;
     double aux1, aux2, aux3, aux4;
@@ -79,8 +77,8 @@ void ProbDensityinR_ligante()
 void ProbDensityinR_antiligante()
 {
     std::vector<double> x, y, z, value;
-    std::ifstream doc("ProbAntiligante.dat");
-    std::ofstream out("Prob_Rantiligante.dat");
+    std::ifstream doc("Outputs/DAT/ProbAntiligante.dat");
+    std::ofstream out("Outputs/DAT/Prob_Rantiligante.dat");
     double auxiliar=0;
     double incremento = 0.01;
     double aux1, aux2, aux3, aux4;
