@@ -1,5 +1,5 @@
 %chk=checkpoint.chk
-%nprocshared=4
+%nprocshared=2
 # B3LYP/6-31G(d,p) OPT FREQ 
 
 13poly
@@ -61,4 +61,3 @@
   H   28.9810624   -2.1388598    0.0082075
 
 
-  

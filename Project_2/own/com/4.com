@@ -1,9 +1,10 @@
 %chk=checkpoint.chk
-%nprocshared=4
+%nprocshared=2
 # B3LYP/6-31G(d,p) OPT FREQ 
 
 4poly
 
+0 1
   C   -2.2517895    1.2190720    0.0168197
   C   -1.0192849    1.7301144   -0.0279446
   C    0.1713241    0.8567291    0.0169163
