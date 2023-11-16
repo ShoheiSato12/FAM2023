@@ -1,0 +1,1 @@
+tsp bash $1
