@@ -1,6 +1,6 @@
 #!/bin/gnuplot
-set terminal pngcairo 
-set output "vai.png" 
+set terminal svg 
+set output "vai.svg" 
 set title "Tudo errado. Faz de novo- by Pedro H."
 f(x)=a*((x-b)**2) +c
 a               = 0.230148  #       +/- 0.006152     (2.673%)
