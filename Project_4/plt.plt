@@ -1,7 +1,8 @@
 #!/bin/gnuplot
 set terminal svg 
 set output "vai.svg" 
-set title "Tudo errado. Faz de novo- by Pedro H."
+set xtics font "Verdana,15"
+set ytics font "Verdana,15"
 f(x)=a*((x-b)**2) +c
 a               = 0.230148  #       +/- 0.006152     (2.673%)
 b               = 1.48632   #       +/- 0.002721     (0.1831%)
@@ -21,13 +22,18 @@ om4=om3+om
 #a=1
 set yrange [-1.2:-0.9]
 set xrange [1:6]
-set xlabel "it's in Bohr radius"
-set ylabel "it's in Hartree"
+set xlabel "Distance (Bohr radius)" font "Verdana, 20"
+set ylabel "Energy (Hartree)" font "Verdana, 20"
 #fit f(x) "parabo.dat" u ($2*2):3 via a,b,c
 
-plot "test.dat" u ($2*2):3 w lp, f(x),\
-om0 title sprintf("%.3f",om0),\
-om1 title sprintf("%.3f",om1),\
-om2 title sprintf("%.3f",om2),\
-om3 title sprintf("%.3f",om3),\
-om4 title sprintf("%.3f",om4)
+plot "test.dat" u ($2*2):3 w lp title "Simulation", f(x) title "Harmonic aproximation",\
+om0 title "n=0",\
+om1 title "n=1",\
+om2 title "n=2",\
+om3 title "n=3",\
+om4 title "n=4"
+# om0 title sprintf("n=0%.2f",om0),\
+# om1 title sprintf("n=1%.2f",om1),\
+# om2 title sprintf("n=2%.2f",om2),\
+# om3 title sprintf("n=3%.2f",om3),\
+# om4 title sprintf("n=4%.2f",om4)

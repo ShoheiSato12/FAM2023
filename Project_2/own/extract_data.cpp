@@ -4,14 +4,15 @@
 #include <regex>
 #include <vector>
 #include <cmath>
-int main(int argc, char* argv[]) {
-    if (argc != 2) {
-        std::cerr << "Usage: " << argv[0] << " <logFileName>" << std::endl;
-        return 1;
-    }
+int main() {
+    // if (argc != 2) {
+    //     std::cerr << "Usage: " << argv[0] << " <logFileName>" << std::endl;
+    //     return 1;
+    // }
 
-    const std::string logFileName = argv[1];
-
+    //const std::string logFileName = argv[1];
+    std::string logFileName;
+    
     // Define the regular expression pattern to match atom coordinates
     std::regex atomPattern(R"(\s*(\d+)\s+(\w+)\s+(-?\d+\.\d+)\s+(-?\d+\.\d+)\s+(-?\d+\.\d+))");
 
